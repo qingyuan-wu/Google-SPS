@@ -9,12 +9,36 @@
   <body>
     <div id="content">
       <h1>Qingyuan's Portfolio</h1>
-      <p>Hello, I'm an incoming third year Engineering student studying at the University of Toronto. I'm majoring in Machine Intelligence.</p>
-      <img src="/images/Qingyuan_W.png" />
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <div class="links-flexbox">
+          <div class="link-item"><a href="/">Home</a></div>
+          <div class="link-item"><a href="https://github.com/qingyuan-wu">GitHub</a></div>
+          <div class="link-item"><a href="https://linkedin.com/in/qingyuan-wu">LinkedIn</a></div>
+          <div class="link-item"><a href="blogs.html">Blog Posts</a></div>
+          <div class="link-item"><a href="gallery.html">Photo Gallery</a></div>
+      </div>
+      <div class="personal-info-flexbox">
+        <img src="/images/Qingyuan_W.png" />
+        <p>Hello, I'm an incoming third year Engineering student studying at the University of Toronto. I'm majoring in Machine Intelligence. On my free time I love to do sports, watch YouTube, and explore Toronto!</p>
+      </div>
+
+      <p>Click <a href="/hello">here</a> to see content created by the Java backend</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+      <div class="projects">
+          <h2>Past Projects</h2>
+          <div>
+              <h4><a href="https://github.com/qingyuan-wu/Seam-Carving">Seamcarving</a></h4>
+              <div>
+                  Smartly removed one seam of pixels at a time to resize an image
+              </div>
+          </div>
+          <div>
+            <h4><a href="https://github.com/qingyuan-wu/Spacetogram">Spacetogram</a></h4>
+            <div>
+                A frontend website that retrieved the lastest <a href="https://apod.nasa.gov/apod/astropix.html">NASA Astronomy Picture of the Day</a> images and displayed them in an Instagram-styled gallery
+            </div>
+          </div>
+      </div>
     </div>
   </body>
 </html>

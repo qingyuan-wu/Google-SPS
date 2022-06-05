@@ -1,0 +1,18 @@
+.gallery-flexbox-1, .gallery-flexbox-2 {
+    display:flex;
+}
+
+img {
+    width: 100px;
+    height:auto;
+}
+
+#gf1-1, #gf1-2, #gf1-3 {
+    flex:1;
+}
+#gf2-1 {
+    flex:2;
+}
+#gf2-2 {
+    flex:1;
+}
