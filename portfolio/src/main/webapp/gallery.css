@@ -1,10 +1,11 @@
-.gallery-flexbox-1, .gallery-flexbox-2 {
+.gallery-flexbox-1, .gallery-flexbox-2, .gallery-flexbox-3 {
     display:flex;
 }
 
 img {
     width: 100px;
     height:auto;
+    align-self: center;
 }
 
 #gf1-1, #gf1-2, #gf1-3 {
@@ -14,5 +15,11 @@ img {
     flex:2;
 }
 #gf2-2 {
+    flex:1;
+}
+#gf3-1 {
+    flex:1;
+}
+#gf3-2 {
     flex:1;
 }
