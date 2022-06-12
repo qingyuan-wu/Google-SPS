@@ -26,3 +26,11 @@ function addRandomFact() {
   const greetingContainer = document.getElementById('fun-fact-container');
   greetingContainer.innerText = greeting;
 }
+
+async function getServerMessage() {
+    const response = await fetch('/hello');
+    const message = await response.text();
+
+    const container = document.getElementById('server-container');
+    container.innerHTML = message;
+}
