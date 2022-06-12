@@ -15,12 +15,14 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomFact() {
-  const greetings =
-      ['I have a brother', 'I love to play Go', 'I live in Toronto, ON', 'I am left handed'];
+async function addRandomFact() {
+    const response = await fetch('hello');
+    const messages = await response.json();
 
   // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  console.log(messages);
+  console.log(messages.length)
+  const greeting = messages[Math.floor(Math.random() * messages.length)];
 
   // Add it to the page.
   const greetingContainer = document.getElementById('fun-fact-container');
