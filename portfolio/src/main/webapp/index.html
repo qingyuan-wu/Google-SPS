@@ -21,18 +21,40 @@
         <img src="/images/Qingyuan_W.png" />
         <p>Hello, I'm an incoming third year Engineering student studying at the University of Toronto. I'm majoring in Machine Intelligence. On my free time I love to do sports, watch YouTube, and explore Toronto!</p>
       </div>
-
-      <p>Click <a href="/hello">here</a> to see content created by the Java backend</p>
-      <p>Click here to get a fun fact about myself:</p>
-      <button onclick="addRandomFact()">Get Fun Fact</button>
-      <div id="fun-fact-container">
-
+      
+      <h2>Fun!</h2>
+      
+      <div id="interactive-container">
+          
+        <p>Click <a href="/hello">here</a> to see all fun facts</p>
+        <br/><br/>
+        <div id="fun-fact-button">
+            <button onclick="addRandomFact()">Get Fun Fact</button>
+        </div>
+        <br/><br/>
+        <div id="fun-fact-container">
+  
+        </div>
+  
+        <form id="upload-image" action="/upload" method="POST" enctype="multipart/form-data">
+          <p>Upload an image:</p>
+          <input type="file" name="image">
+          <br/>
+          <p>Description:</p>
+          <textarea name="message"></textarea>
+          <br/><br/>
+          <button>Submit</button>
+        </form>
+      </div>
+      <div>
+          User generated images:
+          <a href="/list-images" target="_blank">Click</a>
       </div>
 
-      <button onclick="getServerMessage()">Get Server Message</button>
       <div id="server-container">
 
       </div>
+
       <div class="projects">
           <h2>Past Projects</h2>
           <div>

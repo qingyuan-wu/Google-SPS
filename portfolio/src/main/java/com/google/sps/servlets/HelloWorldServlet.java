@@ -24,8 +24,6 @@ public class HelloWorldServlet extends HttpServlet {
 
     response.setContentType("application/json;");
     response.getWriter().println(json);
-
-
   }
 
     /**

@@ -4,8 +4,20 @@
   width: 900px;
 }
 
+#interactive-container {
+    display:flex
+}
+button {
+    height:20px;
+}
+
 #fun-fact-container {
   margin-top: 20px;
+  flex:1;
+}
+
+#upload-image {
+    flex:1;
 }
 
 a {
