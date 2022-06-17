@@ -1,9 +1,45 @@
 #content {
   margin-left: auto;
   margin-right: auto;
-  width: 650px;
+  width: 900px;
 }
 
-#greeting-container {
-  margin-top: 20px;
+#interactive-container {
+    display:flex
 }
+button {
+    height:20px;
+}
+
+#fun-fact-container {
+  margin-top: 20px;
+  flex:1;
+}
+
+#upload-image {
+    flex:1;
+}
+
+a {
+    text-decoration:none;
+    color:purple;
+}
+
+.links-flexbox, .personal-info-flexbox {
+    display:flex;
+}
+.personal-info-flexbox img {
+    flex:1;
+    width:50%;
+    height:auto;
+}
+.personal-info-flexbox p {
+    flex:2;
+    margin-left:100px;
+}
+
+.link-item {
+    flex:1;
+    margin-bottom:50px;
+}
+
